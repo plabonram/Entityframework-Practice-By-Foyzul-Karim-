@@ -2,7 +2,7 @@
 
 namespace ZooApp.Models
 {
-    class ZooContext : DbContext
+    public class ZooContext : DbContext
     {
 
 
@@ -10,6 +10,10 @@ namespace ZooApp.Models
 
 
         public DbSet<Animal> Animals { get; set; }
+
+       // public System.Data.Entity.DbSet<ZooApp.ViewModel.ViewAnimal> ViewAnimals { get; set; }
+
+       // public System.Data.Entity.DbSet<ZooApp.ViewModel.ViewAnimal> ViewAnimals { get; set; }
 
     }
 }
