@@ -49,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="AnimalFood.cs" />
+    <Compile Include="Food.cs" />
     <Compile Include="Migrations\201705220959548_InitialMigration.cs" />
     <Compile Include="Migrations\201705220959548_InitialMigration.Designer.cs">
       <DependentUpon>201705220959548_InitialMigration.cs</DependentUpon>
@@ -56,6 +58,10 @@
     <Compile Include="Migrations\201705221123067_AddSomeDataToAnimal.cs" />
     <Compile Include="Migrations\201705221123067_AddSomeDataToAnimal.Designer.cs">
       <DependentUpon>201705221123067_AddSomeDataToAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.cs" />
+    <Compile Include="Migrations\201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.Designer.cs">
+      <DependentUpon>201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705221123067_AddSomeDataToAnimal.resx">
       <DependentUpon>201705221123067_AddSomeDataToAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.resx">
+      <DependentUpon>201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
