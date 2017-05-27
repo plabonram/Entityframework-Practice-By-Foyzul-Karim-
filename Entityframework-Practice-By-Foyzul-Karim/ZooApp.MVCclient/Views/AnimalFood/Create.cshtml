@@ -1,4 +1,4 @@
-﻿@model ZooApp.Models.Animal
+﻿@model ZooApp.Models.AnimalFood
 
 @{
     ViewBag.Title = "Create";
@@ -12,23 +12,23 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Animal</h4>
+        <h4>AnimalFood</h4>
         <hr />
         @Html.ValidationSummary(true)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.AnimalId, "AnimalId", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Name)
-                @Html.ValidationMessageFor(model => model.Name)
+                @Html.DropDownList("AnimalId", String.Empty)
+                @Html.ValidationMessageFor(model => model.AnimalId)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Origin, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.FoodId, "FoodId", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Origin)
-                @Html.ValidationMessageFor(model => model.Origin)
+                @Html.DropDownList("FoodId", String.Empty)
+                @Html.ValidationMessageFor(model => model.FoodId)
             </div>
         </div>
 
@@ -39,7 +39,9 @@
                 @Html.ValidationMessageFor(model => model.Quantity)
             </div>
         </div>
-
+          
+        
+        
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />

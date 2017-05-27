@@ -25,7 +25,7 @@ namespace ZooApp.Models
 
 
         [Required]
-        public int Quantity { get; set; }
+        public double Quantity { get; set; }
 
     }
 }

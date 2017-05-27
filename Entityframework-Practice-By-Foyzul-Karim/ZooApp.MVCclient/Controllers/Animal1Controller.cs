@@ -16,7 +16,7 @@ namespace ZooApp.MVCclient.Controllers
 
             AnimalService service = new AnimalService();
 
-            var ViewAnimals = service.GetAnimals();
+            var ViewAnimals = service.GetAll();
 
             return View(ViewAnimals);
         }
@@ -27,7 +27,7 @@ namespace ZooApp.MVCclient.Controllers
         public ActionResult Details(int id)
         {
 
-            var animal = service.GetAnimal(id);
+            var animal = service.Get(id);
 
 
 
@@ -108,14 +108,14 @@ namespace ZooApp.MVCclient.Controllers
 
 
         [HttpGet]
-        public ActionResult Delete()
+        public ActionResult Delete(int id)
         {
 
 
 
 
 
-            return View();
+            return View(service.GetDbModel(id));
 
 
 
@@ -123,8 +123,8 @@ namespace ZooApp.MVCclient.Controllers
 
 
 
-        [HttpPost]
-        public ActionResult Delete(int id)
+        [HttpPost, ActionName("Delete")]
+        public ActionResult ConfirmDelete(int id)
         {
 
 

@@ -41,6 +41,14 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewAnimal.cs" />
+    <Compile Include="ViewFood.cs" />
+    <Compile Include="ViewFoodTotal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZooApp.Models\ZooApp.Models.csproj">
+      <Project>{16461DD0-598E-44AA-AEEA-CE14A033E3F2}</Project>
+      <Name>ZooApp.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -25,6 +25,10 @@ namespace ZooApp.Models
 
         public string Origin { get; set; }
 
+        [Required]
+
+        public int Quantity { get; set; }
+
        
 
         public virtual ICollection<AnimalFood> AnimalFoods { get; set; }

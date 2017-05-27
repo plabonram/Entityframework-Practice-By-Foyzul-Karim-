@@ -13,6 +13,8 @@ namespace ZooApp.Models
         [StringLength(50)]
         [Index("FoodName")]
         public string Name { get; set; }
+        [Required]
+        public double Price { get; set; }
 
         public virtual ICollection<AnimalFood> AnimalFoods { get; set; }
 

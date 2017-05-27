@@ -63,6 +63,14 @@
     <Compile Include="Migrations\201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.Designer.cs">
       <DependentUpon>201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705260559375_AddQuantityToAnimal.cs" />
+    <Compile Include="Migrations\201705260559375_AddQuantityToAnimal.Designer.cs">
+      <DependentUpon>201705260559375_AddQuantityToAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705261549563_AddFoodPrice.cs" />
+    <Compile Include="Migrations\201705261549563_AddFoodPrice.Designer.cs">
+      <DependentUpon>201705261549563_AddFoodPrice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZooContext.cs" />
@@ -80,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.resx">
       <DependentUpon>201705231134153_AddAnimalfoodClassForRelationshipBetweenAnimalAndFoodTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705260559375_AddQuantityToAnimal.resx">
+      <DependentUpon>201705260559375_AddQuantityToAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705261549563_AddFoodPrice.resx">
+      <DependentUpon>201705261549563_AddFoodPrice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
